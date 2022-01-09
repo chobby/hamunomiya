@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>はむのみやTV</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="https://cdn.rawgit.com/phi-jp/phina.js/v0.2.0/build/phina.js"></script>
+    <script src="firebase.js"></script>
+    <script src="game.js"></script>
+  <div>
+    <dd><label>更新履歴</label></dd>
+    <p>編集内容登録後</br>自動的に反映させた．</br>もう再読み込み</br>しなくて良くなったゾ</br>（2016年5月4日）</p>
+  </div>
+
+    <div>
+<dl>
+      <dd><label>イベント内容</label></dd>
+    <p><input type='number' placeholder="会話番号" id='messageIndex'></textarea></p>
+    <p><textarea placeholder="文章" rows="4"  id='messageText'></textarea></p>
+</dl>
+
+<dl>
+    <dd><label>選択肢１</label></dd>
+    <p><input type='text'  placeholder="文章" id='choise1Input'></textarea></p>
+    <p><input type='number'  placeholder="行き先の会話番号" id='choise1NextIndex'></textarea></p>
+</dl>
+<dl>
+    <dd><label>選択肢２</label></dd>
+    <p><input type='text'  placeholder="文章" id='choise2Input'></textarea></p>
+
+    <p><input type='number'  placeholder="行き先の会話番号" id='choise2NextIndex'></textarea></p>
+</dl>
+<dl>
+    <dd><label>選択肢３</label></dd>
+    <p><input type='text'  placeholder="文章" id='choise3Input'></textarea></p>
+
+    <p><input type='number' placeholder="行き先の会話番号"  id='choise3NextIndex'></textarea></p>
+</dl>
+<dl>
+    <dd><label>選択肢４</label></dd>
+    <p><input type='text' placeholder="文章"  id='choise4Input'></textarea></p>
+
+    <p><input type='number'  placeholder="行き先の会話番号" id='choise4NextIndex'></textarea></p>
+</dl>
+
+    <dd><input type="button" value="登録" id='messageRegisterButton'></input></dd>
+  </div>
+  <div>
+    <dl>
+    <dd><label>移動できるよ</label></dd>
+    <p><input type='number' placeholder="会話番号"  id='destinationIndex'></textarea></p>
+    <p><input type="button" value="移動する" id='moveButton'></input></p>
+</dl>
+  </div>
+<div>
+  <label id='scriptsLabel'>確認用文章</label>
+</div>
+  </body>
+</html>
